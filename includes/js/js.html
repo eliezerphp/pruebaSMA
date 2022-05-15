@@ -1,0 +1,222 @@
+   <!-- Bootstrap core JavaScript-->
+   <script src="vendor/jquery/jquery.min.js"></script>
+   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+   <!-- Core plugin JavaScript-->
+   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+   <!-- Custom scripts for all pages-->
+   <script src="js/sb-admin-2.min.js"></script>
+
+   <!-- Page level plugins -->
+   <script src="vendor/chart.js/Chart.min.js"></script>
+
+   <!-- Page level custom scripts -->
+   <script src="js/demo/chart-area-demo.js"></script>
+   <script src="js/demo/chart-pie-demo.js"></script>
+   <!-- SweetAlert2 -->
+<script src="vendor/sweetalert2/sweetalert2.min.js"></script>
+<!-- Datatables -->
+<script src="vendor/datatables/jquery.dataTables.min.js"></script>
+<script src="vendor/datatables/jquery.dataTables.bootstrap4.min.js"></script>
+<script src="vendor/datatables/responsive.bootstrap4.min.js"></script>
+<script src="vendor/datatables/responsive.jqueryui.min.js"></script>
+<script src="vendor/datatables/dataTables.responsive.min.js"></script>
+<!-- <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script> -->
+<!-- <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script> -->
+
+<!-- SELECT 2 -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script> -->
+<script src="vendor/select2/js/select2.min.js"></script>
+
+<!-- DATEPICKER -->
+<script src="vendor/jquery-ui-1.13.1.custom/jquery-ui.min.js"></script>
+
+   <script type="text/javascript">
+
+      //Cuando carga la pagina, cargar el Dashboard primero: 
+     $(document).ready(function(){
+         $.ajax({
+                 url: './Paginas/dashboard/dashboard.php',
+                 beforeSend: function(){
+                    // $('#contenido').text('Cargando...');
+                 },
+                 success: function(data){
+                     setTimeout(function(){
+                         $('#contenido').html(data);
+                     }/*,esperar*/ );
+                 }
+             });
+     });
+     //Termina.
+
+     //Cuando hagan click en el sidemenu correspondiente a categorias carga categorias.php en el #contenido.
+     $('#dashboard').click(function(){
+             var esperar = 2000;
+             $.ajax({
+                 url: './Paginas/dashboard/dashboard.php',
+                 beforeSend: function(){
+                    // $('#contenido').text('Cargando...');
+                 },
+                 success: function(data){
+                     setTimeout(function(){
+                         $('#contenido').html(data);
+                     }/*,esperar*/ );
+                 }
+             });
+         });
+     //Termina.
+     
+     //Cuando hagan click en el sidemenu correspondiente a categorias carga categorias.php en el #contenido.
+         $('#usuarios').click(function(){
+             var esperar = 2000;
+             $.ajax({
+                 url: './Paginas/usuarios/usuarios.php',
+                 beforeSend: function(){
+                    // $('#contenido').text('Cargando...');
+                 },
+                 success: function(data){
+                     setTimeout(function(){
+                         $('#contenido').html(data);
+                     }/*,esperar*/ );
+                 }
+             });
+         });
+     //Termina.
+     
+     //Cuando hagan click en el sidemenu correspondiente a productos carga productos.php en el #contenido.
+     $('#areas').click(function(){
+             var esperar = 2000;
+             $.ajax({
+                 url: './Paginas/areas/areas.php',
+                 beforeSend: function(){
+                     //$('#contenido').text('Cargando...');
+                 },
+                 success: function(data){
+                     setTimeout(function(){
+                         $('#contenido').html(data);
+                     }/*,esperar*/ );
+                 }
+             });
+         });
+     //Termina.
+     
+     //Cuando hagan click en el sidemenu correspondiente a dashboard carga dashboard.php en el #contenido.
+         $('#medios').click(function(){
+             var esperar = 2000;
+             $.ajax({
+                 url: './Paginas/medios/medios.php',
+                 beforeSend: function(){
+                     //$('#contenido').text('Cargando...');
+                 },
+                 success: function(data){
+                     setTimeout(function(){
+                         $('#contenido').html(data);
+                     }/*,esperar*/ );
+                 }
+             });
+         });
+     //Termina.
+     
+     //Cuando hagan click en el sidemenu correspondiente a clientes carga clientes.php en el #contenido.
+         $('#puestos').click(function(){
+             var esperar = 2000;
+             $.ajax({
+                 url: './Paginas/puestos/puestos.php',
+                 beforeSend: function(){
+                     //$('#contenido').text('Cargando...');
+                 },
+                 success: function(data){
+                     setTimeout(function(){
+                         $('#contenido').html(data);
+                     }/*,esperar*/ );
+                 }
+             });
+         });
+     //Termina.
+     
+     //Cuando hagan click en el sidemenu correspondiente a pedidos carga pedidos.php en el #contenido.
+     $('#turnos').click(function(){
+             var esperar = 2000;
+             $.ajax({
+                 url: './Paginas/turnos/turnos.php',
+                 beforeSend: function(){
+                     //$('#contenido').text('Cargando...');
+                 },
+                 success: function(data){
+                     setTimeout(function(){
+                         $('#contenido').html(data);
+                     }/*,esperar*/ );
+                 }
+             });
+         });
+     //Termina.
+
+     //Cuando hagan click en el sidemenu correspondiente a pedidos carga pedidos.php en el #contenido.
+     $('#trabajadores').click(function(){
+             var esperar = 2000;
+             $.ajax({
+                 url: './Paginas/trabajadores/trabajadores.php',
+                 beforeSend: function(){
+                     //$('#contenido').text('Cargando...');
+                 },
+                 success: function(data){
+                     setTimeout(function(){
+                         $('#contenido').html(data);
+                     }/*,esperar*/ );
+                 }
+             });
+         });
+     //Termina.
+     
+     //Cuando hagan click en el sidemenu correspondiente a pedidos carga pedidos.php en el #contenido.
+     $('#asignaturas').click(function(){
+             var esperar = 2000;
+             $.ajax({
+                 url: './Paginas/asignaturas/asignaturas.php',
+                 beforeSend: function(){
+                     //$('#contenido').text('Cargando...');
+                 },
+                 success: function(data){
+                     setTimeout(function(){
+                         $('#contenido').html(data);
+                     }/*,esperar*/ );
+                 }
+             });
+         });
+     //Termina.
+
+     //Cuando hagan click en el sidemenu correspondiente a pedidos carga pedidos.php en el #contenido.
+     $('#aulas').click(function(){
+             var esperar = 2000;
+             $.ajax({
+                 url: './Paginas/aulas/aulas.php',
+                 beforeSend: function(){
+                     //$('#contenido').text('Cargando...');
+                 },
+                 success: function(data){
+                     setTimeout(function(){
+                         $('#contenido').html(data);
+                     }/*,esperar*/ );
+                 }
+             });
+         });
+     //Termina.
+
+     //Cuando hagan click en el sidemenu correspondiente a pedidos carga pedidos.php en el #contenido.
+     $('#roles').click(function(){
+             var esperar = 2000;
+             $.ajax({
+                 url: './Paginas/roles/roles.php',
+                 beforeSend: function(){
+                     //$('#contenido').text('Cargando...');
+                 },
+                 success: function(data){
+                     setTimeout(function(){
+                         $('#contenido').html(data);
+                     }/*,esperar*/ );
+                 }
+             });
+         });
+     //Termina.
+     </script>
