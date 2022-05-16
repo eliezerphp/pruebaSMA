@@ -9,7 +9,3 @@ if(!isset($_SESSION["usuario"]))
 include_once('includes/header.php');
 
 include_once('includes/footer.php');
-
-echo "<h1>Éste es un título.</h1>"
-
-?>
